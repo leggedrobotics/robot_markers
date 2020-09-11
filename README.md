@@ -1,5 +1,5 @@
 # robot_markers
-[![Build Status](https://travis-ci.org/jstnhuang/robot_markers.svg?branch=indigo-devel)](https://travis-ci.org/jstnhuang/robot_markers)
+[![Build Status](https://ci.leggedrobotics.com/buildStatus/icon?job=bitbucket_leggedrobotics/robot_markers/master)](https://ci.leggedrobotics.com/job/github_leggedrobotics/job/robot_markers/job/master/)
 
 Generates markers for a robot given a URDF.
 
