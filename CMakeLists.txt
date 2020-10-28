@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.8)
 project(robot_markers)
 
 ## Find catkin macros and libraries
@@ -76,6 +76,7 @@ target_link_libraries(robot_markers_forward_kinematics
 )
 
 add_library(robot_markers_builder src/builder.cpp)
+target_compile_features(robot_markers_builder PRIVATE cxx_std_17)
 add_dependencies(robot_markers_builder ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(robot_markers_builder
 	robot_markers_forward_kinematics
